@@ -1,0 +1,10 @@
+{
+  "name": "babylon3d-visualization",
+  "version": "1.0.0",
+  "description": "Aplicación interactiva de visualización 3D con Babylon.js",
+  "author": "Ariel Justin Amaguaña Toapanta",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server public -p 8000 -o"
+  }
+}
