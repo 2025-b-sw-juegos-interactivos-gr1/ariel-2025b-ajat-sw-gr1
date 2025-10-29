@@ -7,6 +7,7 @@ Autor: **Ariel Justin Amaguaña Toapanta**
 ## Descripción
 
 Aplicación web que demuestra conceptos fundamentales de renderizado 3D en navegadores modernos, incluyendo:
+
 - Primitivos 3D con texturas realistas
 - Carga y visualización de modelos 3D en formato glTF
 - Iluminación y sombras
@@ -23,6 +24,7 @@ Aplicación web que demuestra conceptos fundamentales de renderizado 3D en naveg
 ## Cómo ejecutar
 
 ### Con npm (recomendado)
+
 ```bash
 npm install -g http-server
 npm start
@@ -31,7 +33,9 @@ npm start
 La aplicación se abrirá automáticamente en `http://localhost:8000`
 
 ### Sin npm
+
 Usa un servidor web estático de tu preferencia:
+
 ```bash
 python -m http.server 8000
 # o
