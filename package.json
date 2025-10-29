@@ -6,5 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "http-server public -p 8000 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
