@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartero del Vecindario - Babylon.js</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: #2c2c2c;
+            overflow: hidden;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            touch-action: none;
+            outline: none;
+        }
+
+        #gameUI {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        #instructions {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 14px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Canvas para renderizado 3D -->
+    <canvas id="renderCanvas"></canvas>
+
+    <!-- UI del juego -->
+    <div id="gameUI">
+        <div id="gameStatus">🏃‍♂️ Cartero del Vecindario</div>
+        <div id="cartaStatus">📭 Busca la carta en la oficina postal</div>
+    </div>
+
+    <!-- Instrucciones -->
+    <div id="instructions">
+        <div>🎮 WASD: Mover | Mouse: Mirar | ESPACIO: Recoger/Entregar</div>
+        <div>🎯 Objetivo: Recoge la carta y entrégala en el buzón rojo</div>
+    </div>
+
+    <!-- Indicador de carga -->
+    <div id="loadingIndicator" class="loading">
+        🔄 Cargando mundo del cartero...
+    </div>
+
+    <!-- Cargar Babylon.js desde CDN -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+    <!-- Cargar motor de física Cannon.js -->
+    <script src="https://cdn.babylonjs.com/cannon.js"></script>
+
+    <!-- Cargar el juego -->
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
